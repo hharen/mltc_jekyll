@@ -30,21 +30,8 @@ twitter_username: hanaharencar
 github_username:  hharen
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
-
-# Do I need to add this?
-lsi: false
-safe: true
-source: mltc-jekyll
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
 
 # Exclude from processing.
 # The following items will not be processed, by default.
