@@ -1,0 +1,84 @@
+---
+---
+
+body {
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Mono', sans-serif;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-image: url(../images/hero-moms-learn-to-code.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  color: #fff;
+  padding: 1em;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  color: white;
+  text-decoration: none;
+  font-family: 'Space Mono', sans-serif;
+}
+
+.hero-title {
+  max-width: 12em;
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 12vh;
+  font-weight: bold;
+  line-height: .9;
+  margin-bottom: 0.5em;
+}
+
+@media only screen and (min-width: 32em) { .hero-title { font-size: 16vh; } }
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  padding: 0.5em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.primary-button {
+  background-color: #ef4f4f;
+}
+
+.primary-button:hover, .outline-button:hover {
+  background-color: #B03A3A;
+  border: none;
+}
+
+.outline-button {
+  border: 1px solid #fff;
+  margin-left: 5px;
+}
+
+.menu-item {
+  padding: 0 5px;
+}
+
+.menu-item:hover {
+  color: #ef4f4f;
+  font-weight: bold;
+}
+
