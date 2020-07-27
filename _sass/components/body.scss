@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+a:hover, svg:hover {
+  color: $hover-color;
+}
+
 .menu-item {
   padding: 0 5px;
 }
@@ -24,4 +28,3 @@ a {
   color: $primary-color;
   font-weight: bold;
 }
-
