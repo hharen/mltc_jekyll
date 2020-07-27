@@ -50,6 +50,8 @@ defaults:
 #
 exclude:
   - index_to_be.html
+  - playground.html
+  - mplayground.html
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
