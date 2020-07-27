@@ -1,0 +1,46 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-image: url(../images/hero-moms-learn-to-code.jpeg);
+  background-position: 70% 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  filter: brightness(97%);
+  color: #fff;
+  padding: 1em 2em;
+  min-height: 500px;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  color: white;
+  text-decoration: none;
+  font-family: $header-font, sans-serif;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  max-width: 500px;
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  line-height: .9;
+  margin-bottom: 0.5em;
+}
+
+@media only screen and (max-width: 660px) {
+  .hero-title {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    font-size: 2.5em;
+  }
+}

@@ -1,0 +1,22 @@
+.button {
+  padding: 0.5em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.primary-button {
+  background-color: $primary-color;
+}
+
+.outline-button {
+  border: 1px solid #fff;
+  color: #fff;
+  margin-left: 5px;
+}
+
+.primary-button:hover, .outline-button:hover {
+  background-color: $hover-color;
+  border: none;
+  color: #fff;
+}

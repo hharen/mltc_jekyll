@@ -33,6 +33,13 @@ github_username:  hharen
 plugins:
   - jekyll-feed
 
+defaults:
+-
+  scope:
+    path: "" # an empty string here means all files in the project
+  values:
+    layout: "page"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -41,7 +48,10 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
+  - index_to_be.html
+  - playground.html
+  - mplayground.html
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/

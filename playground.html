@@ -1,0 +1,33 @@
+---
+title: Liquid playground
+layout: page
+days: Monday, Tuesday
+---
+<h1>{{ site.title }}</h1> # why is it moms learn to code and not liquit playground?
+
+<h2>How to display time</h2>
+<p>Just time:<br>{{ site.time }}</p>
+<p>String time:<br>{{ site.time | date_to_string }}</p>
+<p>Long string time:<br>{{ site.time | date_to_long_string }}</p>
+<p>Long string ordinal time:<br>{{ site.time | date_to_long_string: 'ordinal' }}</p>
+<p>Long string ordinal US time:<br>{{ site.time | date_to_long_string: 'ordinal', 'US' }}</p>
+
+<h2>Data types</h2>
+
+<h3>String</h3>
+{% assign greeting = 'Hi, there!' %}
+{{ greeting }}
+
+<h3>Integer/Float</h3>
+
+<h3>Array</h3>
+
+{% assign days = "Monday, Tuesday, Wednesday" | split: ", " %}
+
+<h3>Days</h3>
+<ul>
+  {% for day in days %}
+    <li>{{ day }}</li>
+  {% endfor %}
+</ul>
+
