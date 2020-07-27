@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: $body-font, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font, sans-serif;
+}
+
+h2, h3, h4 {
+  text-transform: capitalize;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.menu-item {
+  padding: 0 5px;
+}
+
+.menu-item:hover {
+  color: $primary-color;
+  font-weight: bold;
+}
+

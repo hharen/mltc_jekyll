@@ -1,97 +1,13 @@
 ---
 ---
 
-body {
-  margin: 0;
-  font-family: 'Nunito Sans', sans-serif;
-}
+$primary-color: #ef4f4f;
+$hover-color: #B03A3A;
+$bg-color: #f5f5f5;
+$header-font: 'Space Mono';
+$body-font: 'Nunito Sans';
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Space Mono', sans-serif;
-}
-
-h2, h3, h4 {
-  text-transform: capitalize;
-}
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-  background-image: url(../images/hero-moms-learn-to-code.jpg);
-  background-position: 70% 20%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-
-  color: #fff;
-  padding: 1em;
-}
-
-// .overlay {
-// background-color: rgba(0,0,0,0.1);
-// background-color: #000;
-// opacity: 1;
-// }
-
-#header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#logo {
-  color: white;
-  text-decoration: none;
-  font-family: 'Space Mono', sans-serif;
-}
-
-.hero-title {
-  max-width: 500px;
-  margin: 0;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 5em;
-  font-weight: bold;
-  line-height: .9;
-  margin-bottom: 0.5em;
-}
-
-@media only screen and (max-width: 700px) { .hero-title { font-size: 3em; } }
-
-a {
-  text-decoration: none;
-}
-
-.button {
-  padding: 0.5em;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 18px;
-}
-
-.primary-button {
-  background-color: #ef4f4f;
-}
-
-.primary-button:hover, .outline-button:hover {
-  background-color: #B03A3A;
-  border: none;
-  color: #fff;
-}
-
-.outline-button {
-  border: 1px solid #ef4f4f;
-  color: #ef4f4f;
-  margin-left: 5px;
-}
-
-.menu-item {
-  padding: 0 5px;
-}
-
-.menu-item:hover {
-  color: #ef4f4f;
-  font-weight: bold;
-}
-
+@import 'components/buttons';
+@import 'components/hero';
+@import 'components/body';
+@import 'components/containers';
