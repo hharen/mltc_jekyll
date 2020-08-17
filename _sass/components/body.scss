@@ -15,8 +15,9 @@ h2, h3, h4 {
 
 h2 {
   font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
-
 
 a {
   text-decoration: none;
@@ -33,4 +34,9 @@ a:hover, svg:hover {
 .menu-item:hover {
   color: $primary-color;
   font-weight: bold;
+}
+
+// Features
+.feature-svg {
+  height: 100px;
 }
