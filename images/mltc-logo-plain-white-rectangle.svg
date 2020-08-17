@@ -8,24 +8,26 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:version="1.0 (4035a4f, 2020-05-01)"
-   sodipodi:docname="mltc-logo-plain-white.svg"
+   sodipodi:docname="mltc-logo-plain-white-rectangle.svg"
    width="300"
-   height="300"
-   viewBox="0 0 79.374998 79.375002"
+   height="200"
+   viewBox="0 0 79.374998 52.916668"
    version="1.1"
    id="svg8">
   <sodipodi:namedview
+     inkscape:snap-center="true"
+     inkscape:snap-object-midpoints="true"
      inkscape:current-layer="svg8"
      inkscape:window-maximized="0"
      inkscape:window-y="23"
      inkscape:window-x="0"
-     inkscape:cy="135.38961"
-     inkscape:cx="109.09091"
-     inkscape:zoom="2.0533333"
+     inkscape:cy="170.744"
+     inkscape:cx="142.39387"
+     inkscape:zoom="1.4462011"
      showgrid="false"
      id="namedview35"
-     inkscape:window-height="748"
-     inkscape:window-width="735"
+     inkscape:window-height="801"
+     inkscape:window-width="1372"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
      guidetolerance="10"
@@ -38,10 +40,10 @@
      id="defs2">
     <rect
        id="rect840"
-       height="68.116332"
-       width="66.083009"
-       y="5.6933054"
-       x="5.2866407" />
+       height="68.116333"
+       width="66.083008"
+       y="5.6933055"
+       x="5.2866406" />
   </defs>
   <metadata
      id="metadata5">
@@ -56,6 +58,7 @@
     </rdf:RDF>
   </metadata>
   <g
+     transform="translate(-0.18295054,-12.989491)"
      style="fill:#ffffff"
      id="layer1">
     <g
@@ -130,7 +133,7 @@
        style="font-style:normal;font-weight:normal;font-size:49.38889999999999958px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583">
       <path
          d="m 8.2438657,36.378443 q 0,1.432278 -0.4445001,2.173112 -0.3951112,0.740833 -1.3335003,1.135945 0.9383891,0.395111 1.3335003,1.135944 0.4445001,0.740834 0.4445001,2.173112 v 14.322781 q 0,4.04989 3.8029453,4.04989 h 1.531056 v 1.432278 h -1.382889 q -5.580946,0 -5.580946,-5.432779 v -14.37217 q 0,-2.617612 -2.2225005,-2.617612 H 2.6629199 v -1.432278 h 1.7286116 q 2.2225005,0 2.2225005,-2.568223 v -14.37217 q 0,-5.432779 5.580946,-5.432779 h 1.382889 v 1.432278 h -1.531056 q -3.8029453,0 -3.8029453,4.04989 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:'Montserrat weight=280';stroke-width:0.264583;fill:#ffffff"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:'Montserrat weight=280';fill:#ffffff;stroke-width:0.264583"
          id="path930" />
     </g>
     <g
@@ -139,7 +142,7 @@
        style="font-style:normal;font-weight:normal;font-size:49.38889999999999958px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583">
       <path
          d="m 76.712082,38.946666 v 1.432278 H 74.98347 q -2.2225,0 -2.2225,2.617612 v 14.37217 q 0,5.432779 -5.580946,5.432779 h -1.382889 v -1.432278 h 1.531056 q 3.802945,0 3.802945,-4.04989 V 42.996556 q 0,-1.432278 0.395111,-2.173112 0.4445,-0.740833 1.382889,-1.135944 -0.938389,-0.395112 -1.382889,-1.135945 -0.395111,-0.740834 -0.395111,-2.173112 V 22.055662 q 0,-4.04989 -3.802945,-4.04989 h -1.531056 v -1.432278 h 1.382889 q 5.580946,0 5.580946,5.432779 v 14.37217 q 0,2.568223 2.2225,2.568223 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:'Montserrat weight=280';stroke-width:0.264583;fill:#ffffff"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:'Montserrat weight=280';fill:#ffffff;stroke-width:0.264583"
          id="path927" />
     </g>
   </g>
