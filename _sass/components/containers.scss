@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.container-wide {
+  padding: 2% 7%;
+}
+
 .container-grey {
   background-color: $bg-color;
 }
@@ -24,4 +28,35 @@
   text-transform: none;
   font-size: 24px;
   font-weight: normal;
+}
+
+.course-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20px 20px 20px 50px;
+  margin-bottom: 5%;
+  font-weight: light !important;
+}
+
+.course-card h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #000;
+  font-family: $body-font, sans-serif;
+
+}
+
+.course-text {
+  width: 60%;
+  min-width: 300px;
+
+}
+
+.course-info {
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 20px;
+  min-width: 200px;
 }
