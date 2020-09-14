@@ -49,7 +49,7 @@ defaults:
 # their entries' file path in the `include:` list.
 #
 exclude:
-  - index_to_be.html
+#  - index_to_be.html
   - playground.html
   - mplayground.html
 #   - .sass-cache/

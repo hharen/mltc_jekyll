@@ -24,39 +24,25 @@
   padding: 7% 15%;
 }
 
-.about-me-box h2 {
+.about-me-box {
+  padding: 0;
+}
+
+.about-me-text {
+  text-align: left;
   text-transform: none;
+  font-weight: normal;
+}
+
+.about-me-text h2 {
   font-size: 24px;
-  font-weight: normal;
 }
 
-.course-card {
-  display: flex;
-  justify-content: space-between;
-  background-color: #fff;
-  padding: 20px 20px 20px 50px;
-  margin-bottom: 5%;
-  box-shadow: 0 0 10px #a1a1a1;
+.col-2 img {
+  width: 30%;
 }
 
-.course-card h3 {
-  text-transform: uppercase;
-  font-weight: normal;
-  color: #000;
-  font-family: $body-font, sans-serif;
+.col-2 {
+  width: 50%;
 
-}
-
-.course-text {
-  width: 60%;
-  min-width: 300px;
-
-}
-
-.course-info {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  padding-left: 20px;
-  min-width: 200px;
 }

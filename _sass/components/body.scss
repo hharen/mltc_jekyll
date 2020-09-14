@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: $body-font, sans-serif;
-  background-color: #fafafa;
+  font-size: 18px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -10,13 +10,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2, h3, h4 {
-  text-transform: capitalize;
   color: $primary-color;
-}
-
-h2, h3 {
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+
+h4 {
+  font-weight: lighter;
 }
 
 h2 {
