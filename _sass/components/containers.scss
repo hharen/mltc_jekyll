@@ -35,11 +35,14 @@
   text-transform: none;
   font-weight: normal;
   grid-column: 1;
-  padding: 5%;
+  padding: 20% 10%;
+  line-height: 1.56;
 }
 
 .about-me-text h2 {
+  text-transform: capitalize;
   font-size: 24px;
+  font-weight: lighter;
 }
 
 .about-me-image  {
