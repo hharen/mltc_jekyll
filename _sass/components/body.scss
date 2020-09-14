@@ -28,7 +28,7 @@ a {
   text-decoration: none;
 }
 
-a:hover, svg:hover {
+a:hover, footer svg:hover {
   color: $hover-color;
 }
 
@@ -43,7 +43,7 @@ a:hover, svg:hover {
 
 // Features
 .feature-svg {
-  height: 100px;
+  height: 130px;
 }
 
 .features h3 {
