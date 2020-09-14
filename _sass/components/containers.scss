@@ -51,3 +51,9 @@
   background-position: top center;
   background-size: cover;
 }
+
+@media only screen and (max-width: 800px) {
+  .features, .about-me-box {
+    grid-template-columns: 1fr;
+  }
+}
