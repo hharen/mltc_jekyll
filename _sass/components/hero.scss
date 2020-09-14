@@ -8,7 +8,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   box-sizing: border-box;
-  filter: brightness(97%);
+  filter: brightness(95%);
   color: #fff;
   padding: 1em 2em;
   min-height: 500px;
@@ -17,24 +17,20 @@
 #header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 #logo {
-  color: white;
-  text-decoration: none;
-  font-family: $header-font, sans-serif;
-  margin-bottom: 20px;
+  height: 80px;
 }
 
 .hero-title {
   max-width: 500px;
-  margin: 0;
   font-family: $body-font, sans-serif;
   font-size: 3em;
   font-weight: bold;
   line-height: .9;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 @media only screen and (max-width: 660px) {

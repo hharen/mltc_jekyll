@@ -5,10 +5,16 @@ $primary-color: #ef4f4f;
 $hover-color: #B03A3A;
 $bg-color: #f5f5f5;
 $header-font: 'Space Mono';
-$body-font: 'Didact Gothic';
+$body-font: 'FuturaBT W05 Book', 'Didact Gothic', sans-serif;
+
+@font-face {
+  font-family:"FuturaBT W05 Book";
+  src:url("../assets/fonts/464e1370-5b73-493b-a369-ee8ed8d2d36e.woff2") format("woff2"), url("Fonts/5575015/e23cba8f-ab32-49b8-95d3-3dad0150b369.woff") format("woff");
+}
 
 @import 'components/body';
 @import 'components/buttons';
 @import 'components/containers';
+@import 'components/course-card';
 @import 'components/footer';
 @import 'components/hero';

@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.container-wide {
+  padding: 2% 7%;
+}
+
 .container-grey {
   background-color: $bg-color;
 }
@@ -12,4 +16,33 @@
   font-size: 1.5em;
 }
 
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 18%;
+  row-gap: 10%;
+  padding: 7% 15%;
+}
 
+.about-me-box {
+  padding: 0;
+}
+
+.about-me-text {
+  text-align: left;
+  text-transform: none;
+  font-weight: normal;
+}
+
+.about-me-text h2 {
+  font-size: 24px;
+}
+
+.col-2 img {
+  width: 30%;
+}
+
+.col-2 {
+  width: 50%;
+
+}
