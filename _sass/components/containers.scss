@@ -59,14 +59,13 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .features, .about-me-box {
+  .about-me-box {
     grid-template-columns: 1fr;
   }
 
-
-.about-me-image  {
-  grid-column: 1;
-}
+  .about-me-image  {
+    grid-column: 1;
+  }
 
   .flex-grid {
       display: block;
