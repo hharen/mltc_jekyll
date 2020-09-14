@@ -25,6 +25,8 @@
 }
 
 .about-me-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 0;
 }
 
@@ -32,17 +34,17 @@
   text-align: left;
   text-transform: none;
   font-weight: normal;
+  grid-column: 1;
+  padding: 5%;
 }
 
 .about-me-text h2 {
   font-size: 24px;
 }
 
-.col-2 img {
-  width: 30%;
-}
-
-.col-2 {
-  width: 50%;
-
+.about-me-image  {
+  grid-column: 2;
+  background-image: url('../images/mltc_with-the-baby.jpg');
+  background-position: top center;
+  background-size: cover;
 }
