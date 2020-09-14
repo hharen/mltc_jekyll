@@ -1,0 +1,51 @@
+.course-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20px 20px 20px 50px;
+  margin-bottom: 5%;
+  box-shadow: 0 0 10px #a1a1a1;
+}
+
+.course-card h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #000;
+  font-family: $body-font, sans-serif;
+
+}
+
+.course-text {
+  width: 60%;
+  min-width: 300px;
+
+}
+
+.course-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-left: 20px;
+  min-width: 200px;
+}
+
+
+.time-price {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li:before {
+  content: '✓ ✓ ✔';
+  color: #ef4f4f;
+  font-family: $body-font;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-right: 10px;
+}
