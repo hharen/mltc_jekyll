@@ -6,7 +6,37 @@
   text-align: center;
 }
 
-footer .svg-inline--fa {
+.credits svg {
   padding: 0 5px;
   color: #fff;
+}
+
+.credits a:hover {
+  color: $hover-color;
+}
+
+footer h3 {
+  text-transform: none;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.footer-contact svg {
+  font-size: 1.5em;
+  color: $primary-color;
+}
+
+// MailChimp form
+#mlb2-2406424.ml-form-embedContainer button {
+  text-transform: capitalize !important;
+}
+
+@media only screen and (max-width: 800px) {
+  .footer-contact {
+      display: block;
+  }
 }
