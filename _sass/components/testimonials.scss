@@ -1,8 +1,43 @@
 .testimonials {
   padding: 5% 15%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .testimonial {
+  animation: fade 1.5s;
+  display: none;
+  // padding: 20px;
+  // text-align: center;
+  // align-items: center;
+  // justify-items: center;
+  // justify-content: center;
+
+.prev, .next {
+  position: absolute;
+  top: 49%;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.testimonial-text {
   font-size: 28px;
   font-style: oblique;
   line-height: 1.36;
