@@ -8,7 +8,7 @@ function showSlide(slideIndex) {
   for (var i = 0; i < slides.length; i++) {
     slides[i].style.display = 'none'
   }
-  // slides[currentSlide - 1].style.display = 'flex'
+  slides[currentSlide - 1].style.display = 'block'
 }
 
 

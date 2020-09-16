@@ -8,25 +8,25 @@
 .testimonial {
   animation: fade 1.5s;
   display: none;
-  // padding: 20px;
-  // text-align: center;
-  // align-items: center;
-  // justify-items: center;
-  // justify-content: center;
 }
 
 .prev, .next {
   position: absolute;
-  top: 49%;
+  top: 40%;
   cursor: pointer;
 }
 
+.prev img, .next img {
+  height: 50px;
+ color: $primary-color;
+}
+
 .prev {
-  left: 10px;
+  left: 5%;
 }
 
 .next {
-  right: 10px;
+  right: 5%;
 }
 
 @keyframes fade {
