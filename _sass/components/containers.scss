@@ -63,6 +63,18 @@
   min-height: 500px;
 }
 
+.testimonials {
+  padding: 5% 15%;
+}
+
+.testimonials p {
+  font-size: 28px;
+  font-style: oblique;
+  line-height: 1.36;
+  letter-spacing: normal;
+  padding-top: 1.5em;
+}
+
 
 @media only screen and (max-width: 800px) {
     .about-me-box {
