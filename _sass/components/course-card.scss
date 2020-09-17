@@ -62,6 +62,16 @@ ul {
   text-align: center;
 }
 
+#countdown {
+  color: $primary-color;
+  font-family: $heading-font;
+  font-size: 1.5em;
+}
+
+.small-text {
+  font-size: 14px;
+}
+
 @media only screen and (max-width: 1100px) {
   .course-card {
     display: block;
