@@ -7,9 +7,16 @@ description: Coding classes made by moms, for moms. So if you're looking to comb
     <header class="hero">
       <div id="header">
         <a href="#"><img src='images/mltc-logo-plain-white-rectangle.svg' id="logo"></a>
+        <nav class='hide'>
+          <a class="menu-item">About</a>
+          <a class="menu-item">Courses</a>
+          <a class="menu-item">Contact</a>
+        </nav>
       </div>
       <div class="hero-header">
         <h1 class="hero-title">Coding classes made by moms, for moms.</h1>
+        <a class="button primary-button hide" href="#">Get started</a>
+        <a class="button outline-button hide" href="#">Learn more</a>
       </div>
       <div>
       </div>
@@ -62,6 +69,81 @@ description: Coding classes made by moms, for moms. So if you're looking to comb
         </div>
       </div>
 
+      <div class="container courses">
+        <h2>Our courses</h2>
+        <p>All of our courses are designed to be easy to pick up and put down, to fit
+          in with your busy schedule.</p>
+      </div>
+
+      <div class="container-wide">
+        <div class="course-card">
+          <div class="course-text">
+            <h3>Web develompent for moms in 60 days</h3>
+            <p>Everyone’s talking about coding, but where do you start? One of the
+              best ways is by building websites. Whether you want to tweak your business’s
+              site, hone your web development skills, or learn to collaborate with developers,
+              this will help you get there.</p>
+            <ul>
+              <li><i class="fas fa-check"></i> Read & Write HTML and CSS</li>
+              <li><i class="fas fa-check"></i> Create your own design</li>
+              <li><i class="fas fa-check"></i> Launch a website from your own computer</li>
+              <li><i class="fas fa-check"></i> Build two live websites</li>
+            </ul>
+          </div>
+          <div class="course-info">
+            <div class='time-price'>
+              <h4>Time</h4>
+              <p>4 hours per week</p>
+              <div class='line'></div>
+              <h4>Price</h4>
+              <p>230 CHF</p>
+              <div class='line'></div>
+            </div>
+
+            <div class="time-to-book">
+              <p>Registration will open in:</p>
+              <p id="countdown"></p>
+            </div>
+
+            <a href="#footer" class="button primary-button big">Stay informed</a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-text">
+            <h3>SEO crash course for business owners</h3>
+            <p>Do you want to understand what it takes for search engines to like your
+              website? Search Engine Optimization, or SEO, is a powerful way to drive
+              targeted traffic to your website and help improve your search rankings.
+              In this course you’ll learn SEO that you can immediately apply to your
+              own website, with no prior experience required.</p>
+            <ul>
+              <li><i class="fas fa-check"></i> SEO Strategies</li>
+              <li><i class="fas fa-check"></i> Structure websites for SEO optimization</li>
+              <li><i class="fas fa-check"></i> On-page & off-page SEO</li>
+              <li><i class="fas fa-check"></i> Set up & use Google Analytics</li>
+            </ul>
+          </div>
+          <div class="course-info">
+            <div class='time-price'>
+              <h4>Time</h4>
+              <p>3 hours</p>
+              <div class='line'></div>
+              <h4>Price</h4>
+              <p>80 CHF</p>
+              <div class='line'></div>
+            </div>
+
+            <div class="time-to-book">
+              <p>Registration will open in:</p>
+              <p id="countdownSEO"></p>
+            </div>
+
+            <a href="#footer" class="button primary-button big">Stay informed</a>
+          </div>
+        </div>
+      </div>
+
       <div class="container container-grey about-me-box">
         <div class='about-me-text'>
          <h2>Hey, I'm Hana!</h2>
@@ -71,17 +153,40 @@ description: Coding classes made by moms, for moms. So if you're looking to comb
             great digital products while collaborating with many great people.</p>
           <p>I'm looking forward to to introducing you to the world coding. Let's
             write your first lines of code together.</p>
+          <a href="#" class="button primary-button small hide">Read an interview</a>
         </div>
         <div class="about-me-image">
         </div>
       </div>
 
-      <div class='container'>
-        <h2>New courses coming soon</h2>
-        <p>Subscribe to a newsletter not to miss them!</p>
-        <div class="ml-form-embed"
-          data-account="1165988:j7f7o8g7f4"
-          data-form="2406424:x7c8c2">
+      <div class="container testimonials">
+        <h2>What parents say</h2>
+        <div class="testimonial">
+          <p class="testimonial-text">"I love how passionate Hana is about creating an exciting learning environment
+            in which everyone can get results, while having fun. It's a great feeling to achieve
+            success through something you've learned and created from scratch - especially as a
+            Mum when so much of your time is spent focused on others. I can highly recommend these
+            courses to anyone (Mum or not), looking to learn a practical new skill in an enjoyable and
+            supportive way."</p>
+          <img src="images/testimonials/melitta.jpg" class="avatar">
+          <p class="name">Melitta Campbell</p>
+          <p class="occupation">Business coach</p>
         </div>
+
+        <div class="testimonial">
+          <p class="testimonial-text">"Hana was nice enough to offer to mentor me in the past few months.
+            She's been a most helpful mentor; flexible in terms of the timing of our sessions and very
+            supportive and knowledgeable regarding the topics I had questions about. I can highly recommend
+            her!"</p>
+          <img src="images/testimonials/katalin.jpg" class="avatar">
+          <p class="name">Katalin Karolyi</p>
+          <p class="occupation">Communications Manager</p>
+        </div>
+        <span class="prev" id="prev"><img src="https://img.icons8.com/ios/100/ef4f4f/less-than.png"/></span>
+        <span class="next" id="next"><img src="https://img.icons8.com/ios/100/ef4f4f/more-than.png"/></span>
       </div>
     </main>
+
+    <script src='assets/js/countdown.js'></script>
+    <script src='assets/js/carousel.js'></script>
+
