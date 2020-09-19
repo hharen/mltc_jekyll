@@ -16,12 +16,22 @@
   font-size: 1.5em;
 }
 
+.courses {
+  padding: 5% 25%;
+  font-size: 1.5em;
+}
+
 .features {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 18%;
-  row-gap: 10%;
   padding: 7% 15%;
+}
+
+.flex-grid {
+  display: flex;
+}
+
+.feature {
+  flex: 1;
+  margin: 50px;
 }
 
 .about-me-box {
@@ -45,9 +55,29 @@
   font-weight: lighter;
 }
 
-.about-me-image  {
+.about-me-image {
   grid-column: 2;
   background-image: url('../images/mltc_with-the-baby.jpg');
   background-position: top center;
   background-size: cover;
+  min-height: 500px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .about-me-box {
+    grid-template-columns: 1fr;
+  }
+
+  .about-me-image  {
+    grid-column: 1;
+  }
+
+  .flex-grid {
+      display: block;
+    .feature {
+      width: 100%;
+      margin: 100px 0;
+    }
+  }
 }

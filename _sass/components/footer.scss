@@ -6,7 +6,35 @@
   text-align: center;
 }
 
-.svg-inline--fa {
-  padding: 0 5px;
-  color: #fff;
+.footer-contact h3 {
+  text-transform: none;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.footer-contact svg {
+  font-size: 1.5em;
+  color: $primary-color;
+  position: relative;
+  top: 3px;
+}
+
+#mlb2-2406424.ml-form-embedContainer .ml-form-embedWrapper
+.ml-form-embedBody {
+  padding: 0 !important;
+}
+
+@media only screen and (max-width: 800px) {
+  .footer-contact {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-contact h3 {
+  margin-top: 50px;
+}
 }

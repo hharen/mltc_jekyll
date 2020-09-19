@@ -1,0 +1,75 @@
+.testimonials {
+  padding: 5% 15%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial {
+  animation: fade 1.5s;
+  display: none;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+}
+
+.prev img, .next img {
+  height: 50px;
+  color: $primary-color;
+}
+
+.prev {
+  left: 5%;
+}
+
+.next {
+  right: 5%;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.testimonial-text {
+  font-size: 28px;
+  font-style: oblique;
+  line-height: 1.36;
+  letter-spacing: normal;
+  padding-top: 1.5em;
+}
+
+.name, .occupation {
+  font-size: 16px;
+  margin: 0;
+}
+
+.name {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+  .testimonial-text {
+  font-size: 18px;
+  }
+
+  .prev img, .next img {
+    height: 30px;
+  }
+
+  .prev {
+    left: 1%;
+  }
+
+  .next {
+    right: 1%;
+  }
+}
+

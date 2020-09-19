@@ -5,30 +5,30 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $header-font, sans-serif;
+  font-family: $heading-font, sans-serif;
 
 }
 
 h2, h3, h4 {
   text-transform: uppercase;
   color: $primary-color;
-  text-transform: uppercase;
   letter-spacing: 3px;
 }
 
-h4 {
+h3, h4 {
   font-weight: lighter;
 }
 
-h2 {
+h2, h3 {
   font-size: 18px;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
-a:hover, svg:hover {
+a:hover, footer svg:hover {
   color: $hover-color;
 }
 
@@ -43,9 +43,13 @@ a:hover, svg:hover {
 
 // Features
 .feature-svg {
-  height: 100px;
+  height: 130px;
 }
 
 .features h3 {
   font-weight: normal;
+}
+
+.hide {
+  display: none !important;
 }
