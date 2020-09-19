@@ -54,3 +54,22 @@
 .name {
   font-weight: bold;
 }
+
+@media only screen and (max-width: 800px) {
+  .testimonial-text {
+  font-size: 18px;
+  }
+
+  .prev img, .next img {
+    height: 30px;
+  }
+
+  .prev {
+    left: 1%;
+  }
+
+  .next {
+    right: 1%;
+  }
+}
+
