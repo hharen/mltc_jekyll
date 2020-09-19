@@ -3,15 +3,38 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  box-sizing: border-box;
+  padding: 1em 2em;
+  min-height: 500px;
+}
+
+.hero-homepage {
   background-image: url(../images/hero-moms-learn-to-code.jpg);
   background-position: 70% 20%;
   background-size: cover;
   background-repeat: no-repeat;
-  box-sizing: border-box;
   filter: brightness(95%);
   color: #fff;
-  padding: 1em 2em;
-  min-height: 500px;
+}
+
+.hero-course {
+  background-color: $primary-color;
+  color: #000;
+}
+
+.hero-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-left {
+  width: 50%;
+  color: #fff;
+}
+
+.hero-right {
+  background-color: #fff;
+  color:
 }
 
 #header {
