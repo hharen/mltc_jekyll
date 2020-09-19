@@ -25,7 +25,7 @@ description: Coding classes made by moms, for moms. So if you're looking to comb
     <main>
       <div class='container intro'>
         <h2>Power to the parents</h2>
-        <p>At Moms Learn Code, we believe that moms (and dads, by the way) should
+        <p>At Moms Learn to Code, we believe that moms (and dads, by the way) should
           have as much opportunity as anyone else to learn how to code.</p>
         <p>We offer fast, effective & fun learning strategies to make the most of
           your precious time. So if you’re looking to combine learning to code with
@@ -92,13 +92,19 @@ description: Coding classes made by moms, for moms. So if you're looking to comb
           </div>
           <div class="course-info">
             <div class='time-price'>
-                <h4>Time</h4>
-                <p>4 hours per week</p>
-                <h4>Price</h4>
-                <p>230 CHF</p>
+              <h4>Time</h4>
+              <p>4 hours per week</p>
+              <div class='line'></div>
+              <h4>Price</h4>
+              <p>230 CHF</p>
+              <div class='line'></div>
             </div>
-            <p>Limited time left to book:</p>
-            <p class="timer">12 days, 15 hours, 43 mins</p>
+
+            <div class="time-to-book">
+              <p>Limited time left to book:</p>
+              <p id="countdown"></p>
+            </div>
+
             <a href="#" class="button primary-button big">Read more & book</a>
           </div>
         </div>
@@ -119,16 +125,21 @@ description: Coding classes made by moms, for moms. So if you're looking to comb
             </ul>
           </div>
           <div class="course-info">
-            <div>
+            <div class='time-price'>
               <h4>Time</h4>
               <p>4 hours per week</p>
-            </div>
-            <div>
+              <div class='line'></div>
               <h4>Price</h4>
               <p>230 CHF</p>
+              <div class='line'></div>
             </div>
-            <p>COMING SOON</p>
-            <a href="#" class="button primary-button">Read more</a>
+
+            <div class="time-to-book">
+              <p>Limited time left to book:</p>
+              <p id="countdownSEO"></p>
+            </div>
+
+            <a href="#" class="button primary-button big">Read more & book</a>
           </div>
         </div>
       </div>
@@ -147,4 +158,35 @@ description: Coding classes made by moms, for moms. So if you're looking to comb
         <div class="about-me-image">
         </div>
       </div>
+
+      <div class="container testimonials">
+        <h2>What parents say</h2>
+        <div class="testimonial">
+          <p class="testimonial-text">"I love how passionate Hana is about creating an exciting learning environment
+            in which everyone can get results, while having fun. It's a great feeling to achieve
+            success through something you've learned and created from scratch - especially as a
+            Mum when so much of your time is spent focused on others. I can highly recommend these
+            courses to anyone (Mum or not), looking to learn a practical new skill in an enjoyable and
+            supportive way."</p>
+          <img src="images/testimonials/melitta.jpg" class="avatar">
+          <p class="name">Melitta Campbell</p>
+          <p class="occupation">Business coach</p>
+        </div>
+
+        <div class="testimonial">
+          <p class="testimonial-text">"Hana was nice enough to offer to mentor me in the past few months.
+            She's been a most helpful mentor; flexible in terms of the timing of our sessions and very
+            supportive and knowledgeable regarding the topics I had questions about. I can highly recommend
+            her!"</p>
+          <img src="images/testimonials/katalin.jpg" class="avatar">
+          <p class="name">Katalin Karolyi</p>
+          <p class="occupation">Communications Manager</p>
+        </div>
+        <span class="prev" id="prev"><img src="https://img.icons8.com/ios/100/ef4f4f/less-than.png"/></span>
+        <span class="next" id="next"><img src="https://img.icons8.com/ios/100/ef4f4f/more-than.png"/></span>
+      </div>
     </main>
+
+    <script src='assets/js/countdown.js'></script>
+    <script src='assets/js/carousel.js'></script>
+
