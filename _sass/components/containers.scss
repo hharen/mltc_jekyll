@@ -23,10 +23,20 @@
 
 .features {
   padding: 7% 15%;
+  display: grid;
+  grid-gap: 1em;
 }
 
-.flex-grid {
-  display: flex;
+// .flex-grid {
+//   display: flex;
+// }
+
+.features-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.features-3 {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .feature {
@@ -63,9 +73,15 @@
   min-height: 500px;
 }
 
+@media only screen and (max-width: 1200px) and (min-width: 801px) {
+  .features-2, .features-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 
 @media only screen and (max-width: 800px) {
-    .about-me-box {
+  .about-me-box {
     grid-template-columns: 1fr;
   }
 
@@ -73,11 +89,11 @@
     grid-column: 1;
   }
 
-  .flex-grid {
-      display: block;
-    .feature {
-      width: 100%;
-      margin: 100px 0;
-    }
+  .features-2, .features-3 {
+    grid-template-columns: 1fr;
   }
+    .feature {
+      margin: 25px 0;
+    }
+
 }
