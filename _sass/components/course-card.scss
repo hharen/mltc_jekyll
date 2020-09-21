@@ -51,6 +51,41 @@ ul {
   padding-left: 0;
 }
 
+.course-info {
+  width: 60%;
+  margin: 0 auto;
+}
+
+ ol {
+   list-style: none;
+   counter-reset: item;
+ }
+
+ ol li:before {
+  font-family: $heading-font;
+  font-size: 30px;
+  margin-right: 19px;
+  content: counter(item);
+  border-radius: 100%;
+  border: 2px solid $primary-color;
+  color: $primary-color;
+  width: 1.5em;
+  text-align: center;
+  display: inline-block;
+ }
+
+ol li {
+  font-size: 24px;
+  line-height: 1.42;
+  font-weight: bold;
+  counter-increment: item;
+  margin-bottom: 5px;
+}
+
+ol p {
+  margin-left: 70px;
+}
+
 .fa-check {
   color: $primary-color;
   font-size: 20px;
