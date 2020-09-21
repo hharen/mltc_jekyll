@@ -22,13 +22,13 @@
 }
 
 .features {
-  padding: 7% 15%;
   display: grid;
   grid-gap: 1em;
 }
 
 .features-2 {
   grid-template-columns: 1fr 1fr;
+  padding: 7% 15%;
 }
 
 .features-3 {
