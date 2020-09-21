@@ -27,10 +27,6 @@
   grid-gap: 1em;
 }
 
-// .flex-grid {
-//   display: flex;
-// }
-
 .features-2 {
   grid-template-columns: 1fr 1fr;
 }
@@ -40,7 +36,6 @@
 }
 
 .feature {
-  flex: 1;
   margin: 50px;
 }
 
