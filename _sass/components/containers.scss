@@ -2,10 +2,6 @@
   padding: 5% 7%;
 }
 
-.container-wide {
-  padding: 2% 7%;
-}
-
 .container-grey {
   background-color: $bg-color;
 }
@@ -48,6 +44,15 @@
   padding: 0;
 }
 
+.about-anytime {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-anytime h2 {
+  padding-bottom: 5em;
+}
+
 .about-me-text {
   text-align: left;
   text-transform: none;
@@ -69,6 +74,11 @@
   background-position: top center;
   background-size: cover;
   min-height: 500px;
+}
+
+.course-anytime {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .why {
