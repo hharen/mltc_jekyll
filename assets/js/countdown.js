@@ -23,7 +23,7 @@ var x = setInterval(function() {
   // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "REGISTRATION CLOSED";
+    document.getElementById("countdown").innerHTML = "REGISTRATION OPEN";
   }
 }, 1000);
 
@@ -51,7 +51,7 @@ var x = setInterval(function() {
   // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdownSEO").innerHTML = "REGISTRATION CLOSED";
+    document.getElementById("countdownSEO").innerHTML = "REGISTRATION OPEN";
   }
 }, 1000);
 

@@ -109,11 +109,20 @@ ol p {
   .course-card {
     display: block;
     text-align: center;
+    margin: 0 !important;
   }
 
   .course-text, .course-info {
     width: 100%;
     text-align: center;
+  }
+
+  .course-text {
+    width: 90%;
+  }
+
+  ol {
+    padding: 0;
   }
 
   .time-price {

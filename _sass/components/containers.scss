@@ -39,18 +39,23 @@
 }
 
 .about-me-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   padding: 0;
 }
 
-.about-anytime {
+.grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.about-anytime h2 {
-  padding-bottom: 5em;
+.anytime-title {
+  padding-bottom: 3em;
+}
+
+.anytime-photo {
+  border-radius: 3px;
+  box-shadow: 0 2px 20px 3px rgba(0, 0, 0, 0.08);
+  margin-left: 15%;
+  width: 90%;
 }
 
 .about-me-text {
@@ -76,11 +81,6 @@
   min-height: 500px;
 }
 
-.course-anytime {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .why {
   text-align: center;
 }
@@ -93,19 +93,22 @@
 
 
 @media only screen and (max-width: 800px) {
-  .about-me-box {
-    grid-template-columns: 1fr;
-  }
-
   .about-me-image  {
     grid-column: 1;
   }
 
-  .features-2, .features-3 {
+  .grid-2, .features-2, .features-3 {
     grid-template-columns: 1fr;
   }
     .feature {
       margin: 25px 0;
     }
 
+  .anytime-photo {
+    margin: 5% auto;
+  }
+
+  .anytime-title {
+    padding-bottom: 1em;
+  }
 }
