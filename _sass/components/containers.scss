@@ -6,6 +6,20 @@
   background-color: $bg-color;
 }
 
+.red {
+  background-color: $primary-color;
+  color: #fff;
+}
+
+.red h2, .red h3, .red svg  {
+  color: #fff;
+}
+
+.red h3 {
+  text-transform: none;
+  text-align: left;
+}
+
 .intro {
   padding: 5% 15%;
   text-align: center;
@@ -99,7 +113,8 @@
 
   .grid-2, .features-2, .features-3 {
     grid-template-columns: 1fr;
-  }
+    }
+
     .feature {
       margin: 25px 0;
     }
