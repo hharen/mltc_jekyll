@@ -19,17 +19,15 @@
   text-align: left;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .course-motivation {
   color: #fff;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.space-between {
-  justify-content: space-between;
 }
 
 .intro {
@@ -121,6 +119,10 @@
 @media only screen and (max-width: 800px) {
   .about-me-image  {
     grid-column: 1;
+  }
+
+  .flex-row {
+    display: block;
   }
 
   .grid-2, .features-2, .features-3 {
