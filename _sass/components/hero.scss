@@ -3,15 +3,38 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  box-sizing: border-box;
+  padding: 1em 2em;
+  min-height: 500px;
+}
+
+.hero-homepage {
   background-image: url(../images/hero-moms-learn-to-code.jpg);
   background-position: 70% 20%;
   background-size: cover;
   background-repeat: no-repeat;
-  box-sizing: border-box;
   filter: brightness(95%);
   color: #fff;
-  padding: 1em 2em;
-  min-height: 500px;
+}
+
+.hero-course {
+  background-color: $primary-color;
+  color: #000;
+}
+
+.hero-left {
+  width: 50%;
+  color: #fff;
+  padding: 0 7%;
+}
+
+.hero-right {
+  background-color: #fff;
+  padding: 1em;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.08);
+  max-width: 300px;
 }
 
 #header {
@@ -29,14 +52,36 @@
   font-family: $body-font, sans-serif;
   font-size: 3em;
   font-weight: bold;
-  line-height: .9;
+  line-height: 1.2;
   margin-bottom: 1em;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .hero-header {
+    display: block;
+  }
+
+  .hero {
+    height: auto;
+  }
+
+  .hero-left {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .hero-right{
+    margin: 3em auto;
+  }
 }
 
 @media only screen and (max-width: 660px) {
   .hero-title {
+    font-size: 2em;
+  }
+
+  .overlay {
     background-color: rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    font-size: 2.5em;
   }
 }

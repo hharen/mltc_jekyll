@@ -1,57 +1,27 @@
-// Set the date we're counting down to
+let countdowns = document.getElementsByClassName("countdown")
 
-var countDownDate = new Date("Oct 21, 2020 00:00:00").getTime();
+for (let countdown of countdowns) {
+  let countdownDate = new Date(countdown.dataset['countdownDate']).getTime()
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+  setInterval(function() {
+    let now = new Date().getTime();
 
-  var now = new Date().getTime();
+    let distance = countdownDate - now;
 
-  var distance = countDownDate - now;
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    countdown.innerHTML =
+      days + "<span class='small-text'>days </span>"
+      + hours + "<span class='small-text'>h </span>"
+      + minutes + "<span class='small-text'>min </span>"
+      + seconds + "<span class='small-text'>s </span>";
 
-  document.getElementById("countdown").innerHTML =
-  days + "<span class='small-text'>days </span>"
-  + hours + "<span class='small-text'>h </span>"
-  + minutes + "<span class='small-text'>min </span>"
-  + seconds + "<span class='small-text'>s </span>";
-
-  // If the count down is over, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdown").innerHTML = "REGISTRATION CLOSED";
-  }
-}, 1000);
-
-
-var countDownDateSEO = new Date("Oct 8, 2020 00:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  var now = new Date().getTime();
-
-  var distance = countDownDateSEO - now;
-
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  document.getElementById("countdownSEO").innerHTML =
-  days + "<span class='small-text'>days </span>"
-  + hours + "<span class='small-text'>h </span>"
-  + minutes + "<span class='small-text'>min </span>"
-  + seconds + "<span class='small-text'>s </span>";
-
-  // If the count down is over, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdownSEO").innerHTML = "REGISTRATION CLOSED";
-  }
-}, 1000);
-
+    // If the count down is over, write some text
+    if (distance < 0) {
+      countdown.innerHTML = "REGISTRATION OPEN";
+    }
+  }, 1000)
+}

@@ -23,10 +23,9 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  width: 35%;
-  margin-top: 1em;
+  width: 60%;
+  margin: 0 auto;
 }
-
 
 .time-price {
   display: grid;
@@ -51,16 +50,47 @@ ul {
   padding-left: 0;
 }
 
+ ol {
+   list-style: none;
+   counter-reset: item;
+ }
+
+ ol li:before {
+  font-family: $heading-font;
+  font-size: 30px;
+  margin-right: 19px;
+  content: counter(item);
+  border-radius: 100%;
+  border: 2px solid $primary-color;
+  color: $primary-color;
+  width: 1.5em;
+  text-align: center;
+  display: inline-block;
+ }
+
+ol li {
+  font-size: 24px;
+  line-height: 1.42;
+  font-weight: bold;
+  counter-increment: item;
+  margin-bottom: 5px;
+}
+
+ol p {
+  margin-left: 70px;
+}
+
 .fa-check {
   color: $primary-color;
   font-size: 20px;
+  padding-right: 10px;
 }
 
 .time-to-book {
   text-align: center;
 }
 
-#countdown, #countdownSEO {
+.countdown, #countdownSEO {
   color: $primary-color;
   font-family: $heading-font;
   font-size: 1.5em;
@@ -73,12 +103,39 @@ ul {
 @media only screen and (max-width: 1100px) {
   .course-card {
     display: block;
-    text-align: center;
+    margin: 0 !important;
   }
 
-  .course-text, .course-info {
-    width: 100%;
+  .course-text {
+    width: 90%;
     text-align: center;
+    margin: auto;
+  }
+
+  .hero-right {
+    padding: 0;
+  }
+
+  .course-info {
+    margin: 0 auto !important;
+    width: auto;
+  }
+
+  ol li::before {
+    font-size: 1em;
+    margin-right: 10px;
+  }
+
+  ol li {
+    font-size: 20px;
+  }
+
+  ol p {
+    margin-left: 0;
+  }
+
+  ol {
+    padding: 0;
   }
 
   .time-price {
