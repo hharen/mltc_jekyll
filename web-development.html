@@ -1,28 +1,27 @@
 ---
-title: Web Development Course
+title: Learn Web Development
 layout: page
 description: Whether you want to make a site for your business, hone your web development skills, or learn to collaborate with developers, this will help you get there.
 ---
 
     <header class="hero hero-course">
-      <div id="header">
-        <a href="/"><img src='images/mltc-logo-plain-white-rectangle.svg' id="logo"></a>
-        <nav class="hide">
-          <a class="menu-item">About</a>
-          <a class="menu-item">Courses</a>
-          <a class="menu-item">Contact</a>
-        </nav>
-      </div>
+
+      {% include layout_top_navigation.html %}
+
       <div class="flex-row">
         <div class='hero-left'>
-          <h1 class="hero-title">Web development for Moms in 60 days</h1>
+          <h1 class="hero-title">Web development for Moms in 50 days</h1>
           <p>Everyone’s talking about coding, but where do you start? One of the best
           ways is by building websites. Whether you want to make a site for your business,
           hone your web development skills, or learn to collaborate with developers,
           this will help you get there.</p>
         </div>
 
-        {% include layout_web_dev_course_card.html %}
+        <div class="course-info hero-right">
+          {% include layout_web_dev_course_card.html %}
+          <a href="#footer" class="button primary-button big">Stay informed</a>
+        </div>
+
       </div>
       <div></div>
     </header>
@@ -82,7 +81,7 @@ description: Whether you want to make a site for your business, hone your web de
 
       <div class="container">
         <div class='intro'>
-          <h2>What will your learn</h2>
+          <h2>What will you learn</h2>
         </div>
         <div class="course-info course-card">
           <ol>
@@ -111,7 +110,7 @@ description: Whether you want to make a site for your business, hone your web de
               kitchen table, as long as you have an Internet connection!</p>
             <p><strong>The entire program is completely digital so you can access it from
               anywhere.</strong> You can decide when to watch the lessons and do the challenges.
-              And you'll never miss a beat: you will keep the access to the courses materials
+              And you'll never miss a beat: you will keep the access to the cours materials
               also after the course finishes. So you can review them at your own pace.</p>
             <a href="#" class="button primary-button small hide">Read an interview</a>
           </div>
@@ -126,7 +125,7 @@ description: Whether you want to make a site for your business, hone your web de
         <h2>Book your place now</h2>
         <div class="flex-row">
           <div class='hero-left'>
-            <h1 class="hero-title">Web development for Moms in 60 days</h1>
+            <h1 class="hero-title">Web development for Moms in 50 days</h1>
             <ul>
               <li><i class="fas fa-check"></i> Create your first website</li>
               <li><i class="fas fa-check"></i> Make the most of your free time</li>
@@ -137,7 +136,10 @@ description: Whether you want to make a site for your business, hone your web de
               </ul>
           </div>
 
-          {% include layout_web_dev_course_card.html %}
+          <div class="course-info hero-right">
+            {% include layout_web_dev_course_card.html %}
+            <a href="#footer" class="button primary-button big">Stay informed</a>
+          </div>
         </div>
       </div>
 

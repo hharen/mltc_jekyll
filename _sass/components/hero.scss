@@ -41,6 +41,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin: 2em 2em 2em 1em;
 }
 
 #logo {
@@ -58,8 +59,12 @@
 
 
 @media only screen and (max-width: 800px) {
-  .hero-header {
+  .hero-header, #header {
     display: block;
+  }
+
+  #header {
+    text-align: center;
   }
 
   .hero {

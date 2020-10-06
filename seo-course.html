@@ -1,18 +1,13 @@
 ---
-title: SEO Course
+title: Be SEO Savvy
 layout: page
 description: Do you know can SEO help your visibility? Learn this powerful way to drive targeted traffic to your website and improve your search rankings.
 ---
 
     <header class="hero hero-course">
-      <div id="header">
-        <a href="/"><img src='images/mltc-logo-plain-white-rectangle.svg' id="logo"></a>
-        <nav class="hide">
-          <a class="menu-item">About</a>
-          <a class="menu-item">Courses</a>
-          <a class="menu-item">Contact</a>
-        </nav>
-      </div>
+
+      {% include layout_top_navigation.html %}
+
       <div class="flex-row">
         <div class='hero-left'>
           <h1 class="hero-title">SEO crash course for business owners</h1>
@@ -23,7 +18,11 @@ description: Do you know can SEO help your visibility? Learn this powerful way t
             with no prior experience required.</p>
         </div>
 
-        {% include layout_seo_course_card.html %}
+        <div class="course-info hero-right">
+          {% include layout_seo_course_card.html %}
+          <a href='#footer' class="button primary-button big">Let me know</a>
+        </div>
+
       </div>
       <div></div>
     </header>
@@ -81,7 +80,7 @@ description: Do you know can SEO help your visibility? Learn this powerful way t
 
       <div class="container">
         <div class='intro'>
-          <h2>What will your learn</h2>
+          <h2>What will you learn</h2>
         </div>
         <div class="course-info course-card">
           <ol>
@@ -113,7 +112,7 @@ description: Do you know can SEO help your visibility? Learn this powerful way t
               kitchen table, as long as you have an Internet connection!</p>
             <p><strong>The entire program is completely digital so you can access it from
               anywhere.</strong> You can decide when to watch the lessons and do the challenges.
-              And you'll never miss a beat: you will keep the access to the courses materials
+              And you'll never miss a beat: you will keep the access to the cours materials
               also after the course finishes. So you can review them at your own pace.</p>
             <a href="#" class="button primary-button small hide">Read an interview</a>
           </div>
@@ -140,7 +139,10 @@ description: Do you know can SEO help your visibility? Learn this powerful way t
               </ul>
           </div>
 
-          {% include layout_seo_course_card.html %}
+          <div class="course-info hero-right">
+            {% include layout_seo_course_card.html %}
+            <a href='#footer' class="button primary-button big">Let me know</a>
+          </div>
         </div>
       </div>
 
@@ -148,8 +150,8 @@ description: Do you know can SEO help your visibility? Learn this powerful way t
         <h2>How do I know I'm ready for this course</h2>
         <p><strong>You’re ready for this course if:</strong></p>
         <p>You’re <strong>curious</strong> about SEO<br>
-          You You want to <strong>improve</strong> your website’s search ranking<br>
-          You enjoy <strong>learning new things</strong>
+          You want to <strong>improve</strong> your website’s search ranking<br>
+          You enjoy <strong>learning new things</strong><br>
           You <strong>don’t</strong> need to be good at maths<br>
           You’re looking for something <strong>interesting</strong> to do</p>
         <p>If your answer is <strong>yes</strong> to most of the above,
