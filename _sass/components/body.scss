@@ -43,7 +43,6 @@ a:hover, footer svg:hover {
 
 .menu-item:hover {
   color: $primary-color;
-  font-weight: bold;
 }
 
 // Features
@@ -57,4 +56,33 @@ a:hover, footer svg:hover {
 
 .hide {
   display: none !important;
+}
+
+
+// Navigation
+
+nav {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.menu-item:hover {
+  color: #fff;
+}
+
+.menu-item {
+  display: inline-block;
+}
+
+.menu-item::after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: #fff;
+  transition: 300ms;
+}
+
+.menu-item:hover::after {
+  width: 100%;
 }
