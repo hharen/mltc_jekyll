@@ -23,8 +23,8 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  width: 35%;
-  margin-top: 1em;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .time-price {
@@ -48,11 +48,6 @@
 ul {
   list-style: none;
   padding-left: 0;
-}
-
-.course-info {
-  width: 60%;
-  margin: 0 auto;
 }
 
  ol {
@@ -108,17 +103,38 @@ ol p {
 @media only screen and (max-width: 1100px) {
   .course-card {
     display: block;
-    text-align: center;
     margin: 0 !important;
   }
 
-  .course-text, .course-info {
+  .course-text {
     width: 100%;
     text-align: center;
   }
 
+  .hero-right {
+    padding: 0;
+  }
+
+  .course-info {
+    margin: 0 auto !important;
+    width: auto;
+  }
+
   .course-text {
     width: 90%;
+  }
+
+  ol li::before {
+    font-size: 1em;
+    margin-right: 10px;
+  }
+
+  ol li {
+    font-size: 20px;
+  }
+
+  ol p {
+    margin-left: 0;
   }
 
   ol {

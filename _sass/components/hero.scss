@@ -69,7 +69,6 @@
   .hero-left {
     width: 80%;
     margin: 0 auto;
-    text-align: center;
   }
 
   .hero-right{
@@ -80,7 +79,7 @@
 @media only screen and (max-width: 660px) {
   .hero-title {
     padding: 10px;
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   .overlay {
