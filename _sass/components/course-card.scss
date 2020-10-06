@@ -107,8 +107,9 @@ ol p {
   }
 
   .course-text {
-    width: 100%;
+    width: 90%;
     text-align: center;
+    margin: auto;
   }
 
   .hero-right {
@@ -118,10 +119,6 @@ ol p {
   .course-info {
     margin: 0 auto !important;
     width: auto;
-  }
-
-  .course-text {
-    width: 90%;
   }
 
   ol li::before {
