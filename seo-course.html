@@ -20,8 +20,46 @@ description: Do you know can SEO help your visibility? Learn this powerful way t
 
         <div class="course-info hero-right">
           {% include layout_seo_course_card.html %}
-          <a href='#footer' class="button primary-button big">Let me know</a>
+          <!-- <a href='#footer' class="button primary-button big">Let me know</a> -->
+          <button href='#footer' class="button primary-button big"
+            id="checkout-button-sku_Fw3JmUkB3Z3en0"
+            role="link"
+            type="button">Register now
+          </button>
         </div>
+
+        <div id="error-message"></div>
+
+        <script>
+        (function() {
+          var stripe = Stripe('pk_live_No4I1hI6Tnl3Qb0SgR7YVbpW00PxOKOWrd');
+
+          var checkoutButton = document.getElementById('checkout-button-sku_Fw3JmUkB3Z3en0');
+          checkoutButton.addEventListener('click', function () {
+            // When the customer clicks on the button, redirect
+            // them to Checkout.
+            stripe.redirectToCheckout({
+              lineItems: [{price: 'sku_Fw3JmUkB3Z3en0', quantity: 1}],
+              mode: 'payment',
+              // Do not rely on the redirect to the successUrl for fulfilling
+              // purchases, customers may not always reach the success_url after
+              // a successful payment.
+              // Instead use one of the strategies described in
+              // https://stripe.com/docs/payments/checkout/fulfill-orders
+              successUrl: 'https://www.momslearntocode.com/success',
+              cancelUrl: 'https://www.momslearntocode.com/canceled',
+            })
+            .then(function (result) {
+              if (result.error) {
+                // If `redirectToCheckout` fails due to a browser or network
+                // error, display the localized error message to your customer.
+                var displayError = document.getElementById('error-message');
+                displayError.textContent = result.error.message;
+              }
+            });
+          });
+        })();
+        </script>
 
       </div>
       <div></div>
@@ -141,7 +179,7 @@ description: Do you know can SEO help your visibility? Learn this powerful way t
 
           <div class="course-info hero-right">
             {% include layout_seo_course_card.html %}
-            <a href='#footer' class="button primary-button big">Let me know</a>
+            <a href='https://checkout.stripe.com/pay/ppage_1HZnaaJ4mYQBGWSaarWXiEyV#fidkdWxOYHwnPyd1blppbHNgWktqMUw0bUwzUWtpNlRnNVZiVzJcU2d1UjU1VX1KTkpSd2EnKSdobGF2Jz9%2BJ2JwbGEnPycyYWE1MjRkNSgxZmA0KDE1MjwoZGNhNCg0MmE3ZzJkMzw2NmZkNGZhNzUnKSdocGxhJz8nPDcyPWY3MzIoYzQ0MigxN2c9KDw2MWcoMGc2NjM1MzVgZjxgZzJgMzdnJykndmxhJz8nMzU9MmQ9YGAoPWRhMigxYWZgKD0yMzYoZjc9MzU2ZjQzZzExYWQ0YzQ2J3gpJ2dgcWR2Jz9eWCknd2BjYHd3YHdKd2xibGsnPydtcXF1dj8qKnJycitoamh2aWBkd2txamZqYWArZmpoJyknaWpmZGlgJz9rcGlpeCUl' class="button primary-button big">Register now</a>
           </div>
         </div>
       </div>
