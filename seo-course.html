@@ -21,8 +21,7 @@ description: Do you know can SEO help your visibility? Learn this powerful way t
         <div class="course-info hero-right">
           {% include layout_seo_course_card.html %}
           <!-- <a href='#footer' class="button primary-button big">Let me know</a> -->
-          <button href='#footer' class="button primary-button big"
-            id="checkout-button-sku_Fw3JmUkB3Z3en0"
+          <button href='#footer' class="button primary-button big checkout-button-sku_Fw3JmUkB3Z3en0"
             role="link"
             type="button">Register now
           </button>
@@ -34,30 +33,32 @@ description: Do you know can SEO help your visibility? Learn this powerful way t
         (function() {
           var stripe = Stripe('pk_live_No4I1hI6Tnl3Qb0SgR7YVbpW00PxOKOWrd');
 
-          var checkoutButton = document.getElementById('checkout-button-sku_Fw3JmUkB3Z3en0');
-          checkoutButton.addEventListener('click', function () {
-            // When the customer clicks on the button, redirect
-            // them to Checkout.
-            stripe.redirectToCheckout({
-              lineItems: [{price: 'sku_Fw3JmUkB3Z3en0', quantity: 1}],
-              mode: 'payment',
-              // Do not rely on the redirect to the successUrl for fulfilling
-              // purchases, customers may not always reach the success_url after
-              // a successful payment.
-              // Instead use one of the strategies described in
-              // https://stripe.com/docs/payments/checkout/fulfill-orders
-              successUrl: 'https://www.momslearntocode.com/success',
-              cancelUrl: 'https://www.momslearntocode.com/canceled',
-            })
-            .then(function (result) {
-              if (result.error) {
-                // If `redirectToCheckout` fails due to a browser or network
-                // error, display the localized error message to your customer.
-                var displayError = document.getElementById('error-message');
-                displayError.textContent = result.error.message;
-              }
+          var checkoutButtons = document.getElementsByClassName('checkout-button-sku_Fw3JmUkB3Z3en0');
+          for (const button of checkoutButtons){
+            button.addEventListener('click', function () {
+              // When the customer clicks on the button, redirect
+              // them to Checkout.
+              stripe.redirectToCheckout({
+                lineItems: [{price: 'sku_Fw3JmUkB3Z3en0', quantity: 1}],
+                mode: 'payment',
+                // Do not rely on the redirect to the successUrl for fulfilling
+                // purchases, customers may not always reach the success_url after
+                // a successful payment.
+                // Instead use one of the strategies described in
+                // https://stripe.com/docs/payments/checkout/fulfill-orders
+                successUrl: 'https://www.momslearntocode.com/success',
+                cancelUrl: 'https://www.momslearntocode.com/canceled',
+              })
+              .then(function (result) {
+                if (result.error) {
+                  // If `redirectToCheckout` fails due to a browser or network
+                  // error, display the localized error message to your customer.
+                  var displayError = document.getElementById('error-message');
+                  displayError.textContent = result.error.message;
+                }
+              });
             });
-          });
+          }
         })();
         </script>
 
@@ -177,15 +178,49 @@ description: Do you know can SEO help your visibility? Learn this powerful way t
               </ul>
           </div>
 
+
           <div class="course-info hero-right">
             {% include layout_seo_course_card.html %}
             <!-- <a href='#footer' class="button primary-button big">Let me know</a> -->
-            <button href='#footer' class="button primary-button big"
-              id="checkout-button-sku_Fw3JmUkB3Z3en0"
+            <button href='#footer' class="button primary-button big checkout-button-sku_Fw3JmUkB3Z3en0">
               role="link"
               type="button">Register now
             </button>
           </div>
+
+          <script>
+          (function() {
+            var stripe = Stripe('pk_live_No4I1hI6Tnl3Qb0SgR7YVbpW00PxOKOWrd');
+
+            var checkoutButtons = document.getElementsByClassName('checkout-button-sku_Fw3JmUkB3Z3en0');
+            for (const button of checkoutButtons){
+              button.addEventListener('click', function () {
+                // When the customer clicks on the button, redirect
+                // them to Checkout.
+                stripe.redirectToCheckout({
+                  lineItems: [{price: 'sku_Fw3JmUkB3Z3en0', quantity: 1}],
+                  mode: 'payment',
+                  // Do not rely on the redirect to the successUrl for fulfilling
+                  // purchases, customers may not always reach the success_url after
+                  // a successful payment.
+                  // Instead use one of the strategies described in
+                  // https://stripe.com/docs/payments/checkout/fulfill-orders
+                  successUrl: 'https://www.momslearntocode.com/success',
+                  cancelUrl: 'https://www.momslearntocode.com/canceled',
+                })
+                .then(function (result) {
+                  if (result.error) {
+                    // If `redirectToCheckout` fails due to a browser or network
+                    // error, display the localized error message to your customer.
+                    var displayError = document.getElementById('error-message');
+                    displayError.textContent = result.error.message;
+                  }
+                });
+              });
+            }
+          })();
+        </script>
+
         </div>
       </div>
 
