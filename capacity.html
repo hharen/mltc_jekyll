@@ -1,0 +1,61 @@
+---
+title: Be SEO Savvy
+layout: page
+description: Do you know can SEO help your visibility? Learn this powerful way to drive targeted traffic to your website and improve your search rankings.
+---
+
+    <header class="hero hero-course">
+
+      {% include layout_top_navigation.html %}
+
+      <div class="flex-row">
+        <div class='hero-left'>
+          <h1 class="hero-title">SEO crash course for business owners</h1>
+          <p>A payment link for Capacity members and alumnis</p>
+        </div>
+
+        <div class="course-info hero-right">
+          <button href='#footer' class="button primary-button big"
+            id="checkout-button-sku_IA8oB43OwCiV7V"
+            role="link"
+            type="button">Register now
+          </button>
+        </div>
+
+        <div id="error-message"></div>
+
+        <script>
+        (function() {
+          var stripe = Stripe('pk_live_No4I1hI6Tnl3Qb0SgR7YVbpW00PxOKOWrd');
+
+          var checkoutButton = document.getElementById('checkout-button-sku_IA8oB43OwCiV7V');
+          checkoutButton.addEventListener('click', function () {
+            // When the customer clicks on the button, redirect
+            // them to Checkout.
+            stripe.redirectToCheckout({
+              lineItems: [{price: 'sku_IA8oB43OwCiV7V', quantity: 1}],
+              mode: 'payment',
+              // Do not rely on the redirect to the successUrl for fulfilling
+              // purchases, customers may not always reach the success_url after
+              // a successful payment.
+              // Instead use one of the strategies described in
+              // https://stripe.com/docs/payments/checkout/fulfill-orders
+              successUrl: 'https://momslearntocode.com/success',
+              cancelUrl: 'https://momslearntocode.com/canceled',
+            })
+            .then(function (result) {
+              if (result.error) {
+                // If `redirectToCheckout` fails due to a browser or network
+                // error, display the localized error message to your customer.
+                var displayError = document.getElementById('error-message');
+                displayError.textContent = result.error.message;
+              }
+            });
+          });
+        })();
+        </script>
+      </div>
+      <div></div>
+    </header>
+
+
