@@ -185,6 +185,39 @@ description: Whether you want to make a site for your business, hone your web de
           </div>
 
           <div id="error-message"></div>
+
+          <script>
+        (function() {
+          var stripe = Stripe('pk_live_No4I1hI6Tnl3Qb0SgR7YVbpW00PxOKOWrd');
+
+          var checkoutButtons = document.getElementsByClassName('checkout-button-sku_FkA4plDJKWqJ3B');
+          for (const button of checkoutButtons){
+            button.addEventListener('click', function () {
+              // When the customer clicks on the button, redirect
+              // them to Checkout.
+              stripe.redirectToCheckout({
+                lineItems: [{price: 'sku_FkA4plDJKWqJ3B', quantity: 1}],
+                mode: 'payment',
+                // Do not rely on the redirect to the successUrl for fulfilling
+                // purchases, customers may not always reach the success_url after
+                // a successful payment.
+                // Instead use one of the strategies described in
+                // https://stripe.com/docs/payments/checkout/fulfill-orders
+                successUrl: 'https://www.momslearntocode.com/success',
+                cancelUrl: 'https://www.momslearntocode.com/canceled',
+              })
+              .then(function (result) {
+                if (result.error) {
+                  // If `redirectToCheckout` fails due to a browser or network
+                  // error, display the localized error message to your customer.
+                  var displayError = document.getElementById('error-message');
+                  displayError.textContent = result.error.message;
+                }
+              });
+            });
+          }
+        })();
+        </script>
         </div>
       </div>
 
