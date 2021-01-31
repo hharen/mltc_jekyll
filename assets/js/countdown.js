@@ -21,7 +21,7 @@ for (let countdown of countdowns) {
 
     // If the count down is over, write some text
     if (distance < 0) {
-      countdown.innerHTML = "REGISTRATION OPENS AGAIN IN 2021";
+      countdown.innerHTML = "REGISTRATION CLOSED";
     }
   }, 1000)
 }
