@@ -9,7 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
     <link rel="Shortcut Icon" href="images/favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
+    
+    {% if page.use_regular_page_css %}
+      <link rel="stylesheet" href="{{ '/css/regular_page.css' | relative_url }}">
+    {% endif %}
 
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:description" content="{{ page.description }}" />
