@@ -1,5 +1,5 @@
 ---
-title: Moms Learn to Code – Terms of Service
+title: Terms of Service
 layout: regular_page
 use_regular_page_css: true
 ---
