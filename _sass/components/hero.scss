@@ -42,7 +42,14 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 2em 2em 2em 1em;
+  margin: 2em 2em 0 0;
+}
+
+.hero-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 2;
 }
 
 #logo {
@@ -50,12 +57,22 @@
 }
 
 .hero-title {
-  max-width: 500px;
+  max-width: 600px;
   font-family: $body-font, sans-serif;
   font-size: 3em;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 1em;
+}
+
+.big-title {
+  background: rgba(239, 79, 79, 0.7);
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.fit-content {
+  max-width: fit-content;
 }
 
 @media only screen and (min-width: 1000px) {
